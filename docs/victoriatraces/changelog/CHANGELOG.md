@@ -13,6 +13,7 @@ The following `tip` changes can be tested by building VictoriaTraces components 
 ## tip
 
 * SECURITY: upgrade Go builder from Go1.25.0 to Go1.25.1. See [the list of issues addressed in Go1.25.1](https://github.com/golang/go/issues?q=milestone%3AGo1.25.1%20label%3ACherryPickApproved).
+* SECURITY: upgrade libcrypto3 and libssl3 to `3.5.4-r0` to address CVE-2025-9230, CVE-2025-9231, CVE-2025-9232.
   
 * BUGFIX: all components: restore sorting order of summary and quantile metrics exposed by VictoriaTraces components on `/metrics` page. See [metrics#105](https://github.com/VictoriaMetrics/metrics/pull/105) for details.
 

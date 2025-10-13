@@ -14,11 +14,11 @@ The following `tip` changes can be tested by building VictoriaTraces components 
 
 * SECURITY: upgrade Go builder from Go1.25.0 to Go1.25.2. See the list of issues addressed in [Go1.25.1](https://github.com/golang/go/issues?q=milestone%3AGo1.25.1%20label%3ACherryPickApproved) and [Go1.25.2](https://github.com/golang/go/issues?q=milestone%3AGo1.25.2%20label%3ACherryPickApproved).
 
-* FEATURE: [logstorage](https://docs.victoriametrics.com/victorialogs/): Upgrade VictoriaLogs dependency from [v1.33.1 to v1.35.0](https://github.com/VictoriaMetrics/VictoriaLogs/compare/v1.33.1...v1.35.0).
+* FEATURE: [logstorage](https://docs.victoriametrics.com/victorialogs/): upgrade VictoriaLogs dependency from [v1.33.1 to v1.35.0](https://github.com/VictoriaMetrics/VictoriaLogs/compare/v1.33.1...v1.35.0).
+* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): (experimental) support Jaeger [service dependencies graph API](https://www.jaegertracing.io/docs/2.10/architecture/apis/#service-dependencies-graph). It requires `--servicegraph.enableTask=true` flag to be set on Single-node VictoriaTraces or each vtstorage instance. See [#52](https://github.com/VictoriaMetrics/VictoriaTraces/pull/52) for details.
+* FEATURE: vtinsert in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): distribute spans to vtstorages by trace ID instead of randomly. See [#65](https://github.com/VictoriaMetrics/VictoriaTraces/pull/65) for details.
 
 * BUGFIX: all components: restore sorting order of summary and quantile metrics exposed by VictoriaTraces components on `/metrics` page. See [metrics#105](https://github.com/VictoriaMetrics/metrics/pull/105) for details.
-
-* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): (experimental) support Jaeger [service dependencies graph API](https://www.jaegertracing.io/docs/2.10/architecture/apis/#service-dependencies-graph). It requires `--servicegraph.enableTask=true` flag to be set on Single-node VictoriaTraces or each vtstorage instance. See [#52](https://github.com/VictoriaMetrics/VictoriaTraces/pull/52) for details.
 
 ## [v0.3.0](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.3.0)
 

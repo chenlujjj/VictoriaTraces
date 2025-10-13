@@ -57,7 +57,7 @@ sequenceDiagram
 ```
 
 - `vtinsert` handles trace spans ingestion via [the OpenTelemetry protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/).  
-  It distributes incoming trace spans evenly across `vtstorage` nodes, as specified by the `-storageNode` command-line flag.
+  It distributes incoming trace spans **by trace ID** evenly across `vtstorage` nodes, as specified by the `-storageNode` command-line flag.
 
 - `vtselect` receives queries through [all supported HTTP query endpoints](https://docs.victoriametrics.com/victoriatraces/querying/).  
   It fetches the required data from the configured `vtstorage` nodes, processes the queries, and returns the results.

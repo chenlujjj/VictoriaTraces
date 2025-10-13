@@ -1,5 +1,5 @@
-# github.com/VictoriaMetrics/VictoriaLogs v1.35.1-0.20251002105307-b134e33daa38
-## explicit; go 1.25.1
+# github.com/VictoriaMetrics/VictoriaLogs v1.36.1
+## explicit; go 1.25.2
 github.com/VictoriaMetrics/VictoriaLogs/lib/logstorage
 github.com/VictoriaMetrics/VictoriaLogs/lib/prefixfilter
 # github.com/VictoriaMetrics/VictoriaMetrics v0.0.0-20250917082640-2c72ef0f3871

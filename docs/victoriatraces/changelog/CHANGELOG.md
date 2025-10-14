@@ -12,6 +12,10 @@ The following `tip` changes can be tested by building VictoriaTraces components 
 
 ## tip
 
+## [v0.4.0](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.4.0)
+
+Released at 2025-10-14
+
 * SECURITY: upgrade Go builder from Go1.25.0 to Go1.25.2. See the list of issues addressed in [Go1.25.1](https://github.com/golang/go/issues?q=milestone%3AGo1.25.1%20label%3ACherryPickApproved) and [Go1.25.2](https://github.com/golang/go/issues?q=milestone%3AGo1.25.2%20label%3ACherryPickApproved).
 * SECURITY: upgrade base docker image (Alpine) from 3.22.1 to 3.22.2. See [Alpine 3.22.2 release notes](https://www.alpinelinux.org/posts/Alpine-3.19.9-3.20.8-3.21.5-3.22.2-released.html).
 

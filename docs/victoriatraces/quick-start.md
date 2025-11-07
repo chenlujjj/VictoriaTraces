@@ -78,9 +78,15 @@ See how to [write](#write-data) or [read](#read-data) from VictoriaTraces.
 
 ### Write data
 
-VictoriaTraces can accept trace spans via [the OpenTelemetry protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/). It provides the following API:
+VictoriaTraces can accept trace spans via [the OpenTelemetry protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/). 
+
+It provides the following HTTP API:
 
 - `/insert/opentelemetry/v1/traces`
+
+and the OpenTelemetry Collector gRPC [TraceService](https://github.com/open-telemetry/opentelemetry-proto/blob/v1.8.0/opentelemetry/proto/collector/trace/v1/trace_service.proto#L30).
+
+These enable user to ingest trace spans through [OTLP/HTTP](https://opentelemetry.io/docs/specs/otlp/#otlphttp) and [OTLP/gRPC](https://opentelemetry.io/docs/specs/otlp/#otlpgrpc). 
 
 To test the data ingestion, run the following command:
 
@@ -130,7 +136,7 @@ See more details about the HTTP APIs and params VictoriaTraces supports and how 
 
 see [these docs](https://docs.victoriametrics.com/victoriatraces/vmalert/).
 
-## Monitoring
+### Monitoring
 
 VictoriaTraces exposes internal metrics in Prometheus exposition format at `http://<victoria-traces>:10428/metrics` page.
 It is recommended to set up monitoring of these metrics via VictoriaMetrics

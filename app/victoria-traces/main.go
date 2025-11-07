@@ -52,9 +52,10 @@ func main() {
 
 	servicegraph.Init()
 
-	go httpserver.Serve(listenAddrs, requestHandler, httpserver.ServeOptions{
+	go httpserver.Serve(listenAddrs, httpRequestHandler, httpserver.ServeOptions{
 		UseProxyProtocol: useProxyProtocol,
 	})
+
 	logger.Infof("started VictoriaTraces in %.3f seconds; see https://docs.victoriametrics.com/victoriatraces/", time.Since(startTime).Seconds())
 
 	pushmetrics.Init()
@@ -77,7 +78,7 @@ func main() {
 	logger.Infof("the VictoriaTraces has been stopped in %.3f seconds", time.Since(startTime).Seconds())
 }
 
-func requestHandler(w http.ResponseWriter, r *http.Request) bool {
+func httpRequestHandler(w http.ResponseWriter, r *http.Request) bool {
 	if r.URL.Path == "/" {
 		if r.Method != http.MethodGet {
 			return false

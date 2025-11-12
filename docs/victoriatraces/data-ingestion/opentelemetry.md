@@ -54,7 +54,7 @@ To send the trace data to VictoriaTraces gRPC trace service, you need to first e
 
 > You can also **disable TLS** for incoming gRPC requests by setting `-otlpGRPC.tls=false`. TLS is recommended for production use, and disabling it should only be done when you're testing or aware of the potential risks.
 
-After that, specify the `Endpoint` for grpc-exporter builder to `<victoria-traces>:4317`, and disable TLS by `WithInsecure()` (Because VictoriaTraces gRPC endpoint doesn't support TLS yet).
+After that, specify the `Endpoint` for grpc-exporter builder to `<victoria-traces>:4317`.
 
 Consider the following example for Go SDK:
 ```go

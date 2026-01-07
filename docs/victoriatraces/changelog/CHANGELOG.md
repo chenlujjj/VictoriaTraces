@@ -21,27 +21,27 @@ The following `tip` changes can be tested by building VictoriaTraces components 
 
 ## [v0.5.1](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.5.1)
 
-See changes [here](https://docs.victoriametrics.com/victoriametrics/changelog/changelog_2025/#v051)
+See changes [here](https://docs.victoriametrics.com/victoriatraces/changelog/changelog_2025/#v051)
 
 ## [v0.5.0](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.5.0)
 
-See changes [here](https://docs.victoriametrics.com/victoriametrics/changelog/changelog_2025/#v050)
+See changes [here](https://docs.victoriametrics.com/victoriatraces/changelog/changelog_2025/#v050)
 
 ## [v0.4.1](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.4.1)
 
-See changes [here](https://docs.victoriametrics.com/victoriametrics/changelog/changelog_2025/#v041)
+See changes [here](https://docs.victoriametrics.com/victoriatraces/changelog/changelog_2025/#v041)
 
 ## [v0.4.0](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.4.0)
 
-See changes [here](https://docs.victoriametrics.com/victoriametrics/changelog/changelog_2025/#v040)
+See changes [here](https://docs.victoriametrics.com/victoriatraces/changelog/changelog_2025/#v040)
 
 ## [v0.3.0](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.3.0)
 
-See changes [here](https://docs.victoriametrics.com/victoriametrics/changelog/changelog_2025/#v030)
+See changes [here](https://docs.victoriametrics.com/victoriatraces/changelog/changelog_2025/#v030)
 
 ## [v0.2.0](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.2.0)
 
-See changes [here](https://docs.victoriametrics.com/victoriametrics/changelog/changelog_2025/#v020)
+See changes [here](https://docs.victoriametrics.com/victoriatraces/changelog/changelog_2025/#v020)
 
 ## [v0.1.0](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.1.0)
 
